@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest Form | Justin Smith</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="java.js" defer></script>
+    <link rel="shortcut icon" href="./photos/michlogo.svg" type="image/x-icon">
+</head>
+<body>
+    <div class="mainPage">
+        <div class="imagePage">
+            <svg class="logo" xmlns="http://www.w3.org/2000/svg" width="250" height="250" viewBox="0 0 192.756 192.756"><g fill-rule="evenodd" clip-rule="evenodd"><path fill="#fff" fill-opacity="0" d="M0 0h192.756v192.756H0V0z"/><path fill="#f2ca30" d="M16.257 38.406v34.273h12.428v47.132H16.257v34.541h62.015v-34.541H65.446V92.702l30.931 41.189 30.932-41.187v27.107h-12.827v34.539h62.016v-34.539H164.07V72.679h12.428V38.406h-48.646L96.377 82.133 64.903 38.406H16.257z"/><path fill="#293b5a" d="M96.377 86.252l32.709-45.44h45.006v29.461h-12.428v51.944h12.428v29.726h-57.203v-29.726h12.826V85.492l-33.338 44.391L63.04 85.492v36.725h12.827v29.728H18.663l.001-29.728h12.427V70.273H18.664V40.812H63.67l32.707 45.44z"/></g></svg>
+            <h1 class="formTitle">Interest Form</h1>
+        </div>
+        <div class="formSide">
+            <h1> Want to Learn More? Fill out our Interest Form </h1>
+            <h2 id="messageSmall"> Name of Club Here</h2>
+            <div class="whiteArea">
+                <p class="miniText">Let's Start Here.</p>
+                <form method=post class="mainForm" >
+                    <fieldset>
+                        <label for="first-name">FIRST NAME *</label>
+                        <input type="text" name="first-name" id="first-name" required autocomplete="name" pattern="^[A-Za-z]+$">
+                    </fieldset>
+                    <fieldset>
+                        <label for="last-name">LAST NAME * </label>
+                        <input type="text" name="last-name" id="last-name" required autocomplete="family-name"> 
+                    </fieldset>
+                    <fieldset>
+                        <label for="email">EMAIL *</label>
+                        <input type="email" name="email" id="email" required autocomplete="email">
+                    </fieldset>
+                    <fieldset>
+                        <label for="phone-number">PHONE NUMBER</label>
+                        <input type="tel" name="phone-number" id="phone-number" autocomplete="tel">
+                    </fieldset>
+                    <fieldset>
+                        <label for="major">CURRENT MAJOR</label>
+                        <select name="major" id="major">
+                            <option value="undecided" selected>Undecided</option>
+                            <option value="cs">Computer Science</option>
+                            <option value="ds">Data Science</option>
+                            <option value="cog-sci">Cognitive Science</option>
+                            <option value="cse">Computer Engineering</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </fieldset>
+                    <button id="submit" type="submit">Submit Form</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
